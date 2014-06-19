@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_backgroud"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accout"
+                    android:textSize="@dimen/text_size_login" />
+
+                <EditText
+                    android:id="@+id/id_accout"
+                    android:layout_width="@dimen/input_size_login"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/passwd"
+                    android:textSize="@dimen/text_size_login" />
+
+                <EditText
+                    android:id="@+id/id_passwd"
+                    android:layout_width="@dimen/input_size_login"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/login"
+            android:textSize="@dimen/text_size_login" />
+    </LinearLayout>
+
+</RelativeLayout>

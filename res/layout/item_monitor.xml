@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listitem_company"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="真实姓名: "
+                    android:textSize="@dimen/text_size_deviceinfo" />
+
+                <TextView
+                    android:id="@+id/tv_monitor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_deviceinfo" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话: "
+                    android:textSize="@dimen/text_size_deviceinfo" />
+
+                <TextView
+                    android:id="@+id/tv_monitor_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_deviceinfo" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电子邮箱: "
+                    android:textSize="@dimen/text_size_deviceinfo" />
+
+                <TextView
+                    android:id="@+id/tv_monitor_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_deviceinfo" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/white" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:divider="@drawable/spotline"
+            android:showDividers="middle" >
+
+            <TextView
+                android:id="@+id/btn_monitor_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:text="详细"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_deviceinfo" />
+
+            <TextView
+                android:id="@+id/btn_monitor_dail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:text="呼叫"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_deviceinfo" />
+
+            <TextView
+                android:id="@+id/btn_monitor_emailto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:text="邮件"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_deviceinfo" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

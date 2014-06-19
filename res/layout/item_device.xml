@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listitem_company"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/tv_device_enable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_label"
+                android:text="使用中"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_deviceinfo_tiny" />
+
+            <TextView
+                android:id="@+id/tv_device_hire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_device_enable"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_label"
+                android:text="不是租借"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_deviceinfo_tiny" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设备编号: "
+                    android:textSize="@dimen/text_size_deviceinfo" />
+
+                <TextView
+                    android:id="@+id/tv_device_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_deviceinfo" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设备类型: "
+                    android:textSize="@dimen/text_size_deviceinfo" />
+
+                <TextView
+                    android:id="@+id/tv_device_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_deviceinfo" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row_device_hire_time"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="租借时间: "
+                    android:textSize="@dimen/text_size_deviceinfo" />
+
+                <TextView
+                    android:id="@+id/tv_device_hire_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_deviceinfo" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row_device_return_time"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="归还时间: "
+                    android:textSize="@dimen/text_size_deviceinfo" />
+
+                <TextView
+                    android:id="@+id/tv_device_return_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_deviceinfo" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详细描述: "
+                    android:textSize="@dimen/text_size_deviceinfo" />
+
+                <TextView
+                    android:id="@+id/tv_device_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_deviceinfo" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/white" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:divider="@drawable/spotline"
+            android:showDividers="middle" >
+
+            <TextView
+                android:id="@+id/btn_device_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:text="设备状态"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_deviceinfo" />
+
+            <TextView
+                android:id="@+id/btn_data_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:text="心电数据"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_deviceinfo" />
+
+            <TextView
+                android:id="@+id/btn_exception"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:text="设备异常"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_deviceinfo" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

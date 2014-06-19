@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HealthCare</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login">登 录</string>
+    <string name="logout">退出</string>
+    <string name="accout">账号: </string>
+    <string name="passwd">密码: </string>
+    <string name="user_info">个人信息</string>
+    <string name="device_info">设备信息</string>
+    <string name="monitor">监护人</string>
+    <string name="monitor_object">监护对象</string>
+    <string name="refresh">刷新</string>
+    <string name="nextpage">点击加载下一页</string>
+
+</resources>
